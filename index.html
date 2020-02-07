@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<!-- Google fonts -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Font Awesome -->
+		<script
+			src="https://kit.fontawesome.com/e2335626de.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Wema | book-list app</title>
+	</head>
+	<body>
+		<article>
+			<div class="container">
+				<div class="inner-content">
+					<header class="header">
+						<h1>
+							<i class="fas fa-book-open"></i>Wema<span class="part">Book</span
+							>List
+						</h1>
+					</header>
+        
+					<form id="book-form" class="form" novalidate>
+						<div class="form-row">
+							<input type="text" id="title" class="form-control" required/>
+							<label for="title" class="form-label">Book Title</label>
+						</div>
+
+						<div class="form-row">
+							<input type="text" id="author" class="form-control" required/>
+							<label for="author" class="form-label">Author</label>
+						</div>
+
+						<div class="form-row">
+							<input type="text" id="isbn" class="form-control" required/>
+							<label for="isbn" class="form-label">Isbn</label>
+						</div>
+
+						<button class="btn btn--large">Submit</button>
+                    </form>
+                    
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody id="book-list">
+
+                        </tbody>
+                    </table>
+				</div>
+			</div>
+		
+        </article>
+        
+
+        <script src="js/app.js"></script>
+	</body>
+</html>
